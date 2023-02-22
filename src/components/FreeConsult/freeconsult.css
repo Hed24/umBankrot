@@ -1,0 +1,517 @@
+.free_____header {
+  font-style: 30px;
+}
+
+.top__consult {
+  position: relative;
+}
+
+.free-result {
+  display: none;  
+
+}
+
+.free-result.free-active {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(20, 20, 20, 0.6);
+  z-index: 500;
+
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.free-container {
+  position: relative;
+  top: 30px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 50vw;
+  height: 90vh;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  padding: 20px 90px 20px 90px;
+}
+
+.free_____header {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 48px;
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 30px;
+  padding-top: 90px;
+}
+
+.free_____text {
+  font-size: 24px;
+  font-weight: 300;
+  margin-bottom: 30px;  
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+
+/* ЧЕКБОКС */
+
+.wrapper__checkbox {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  text-align: left;
+  width: 50%;
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.checkbox {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  min-height: 24px;
+  min-width: 24px;
+  background: #D9D9D9;
+  border: 2px #ddd solid;
+  margin-right: 28px;
+  border-radius: 5px;
+}
+
+.checkbox--active {
+  border-color: #D9D9D9;
+  background: #D9D9D9;
+}
+
+
+
+.free-result div .homeButton {
+  position: initial;
+  display: block;
+  width: 36%;
+  height: 57px;
+  background-color: #ED2656;
+  border-radius: 6px;
+  border: none;
+  color: #000000;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+
+.free_____form {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: left;
+  border-radius: 6px;
+}
+
+.free_____phone {
+  width: 100%;
+  height: 91px;
+  font-size: 24px;
+  background-color: #EEEEEE;
+  border-radius: 6px;
+}
+
+.free_____phone::placeholder {
+  font-size: 24px;
+}
+
+.free_____input-text {
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+  padding: 35px;
+  overflow-y: scroll;
+  background-color: #EEEEEE;
+  border: none;
+  outline: none;
+  font-size: 24px;
+  resize: none;
+}
+
+.free_____input-text:focus, .free_____input-text:active {
+  outline: 1px solid #ED2656;
+}
+
+
+.free_____input-text::placeholder {
+  font-size: 24px;
+}
+
+
+.free_____button-send {
+  align-self: center;
+  width: 40%;
+  height: 60px;
+  background-color: #ED2656;
+  border-radius: 60px;
+  border: none;
+  font-size: 24px;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin-right: 0;
+  margin-bottom: 1vh;
+  margin-left: 1vw;
+  transition:all 0.3s ease-in-out;
+}
+
+.free_____button-send:disabled {
+  background-color: grey;
+}
+
+.free_____homeButton-close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  background-color: transparent;
+  border: none;
+}
+
+.phone-wrapper {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.free____phone-error {
+  position: absolute;
+  font-size: 20px;
+  left: 0;
+  bottom: -20px;
+}
+
+.input-wrapper {
+  position: relative;
+  margin-bottom: 35px;
+  height: 45%;
+}
+
+.free____input-error {
+  position: absolute;
+  font-size: 20px;
+  left: 0;
+  bottom: -20px;
+}
+
+
+
+
+@media screen and (max-width: 1500px) {
+
+  .free-container {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  .free_____header {
+    font-size: 24px;
+  }
+  
+  .free_____homeButton-close {
+    font-size: 16px;
+  }
+
+  .free_____button-send {
+    font-size: 16px;
+  }
+
+  .free_____form {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+}
+
+
+@media screen and (max-width: 1200px) {
+
+  .free-container {
+    width: 65vw;
+  }
+
+  .free_____text {
+    font-size: 18px;
+  }
+
+  .free_____header {
+    width: 80%;
+    font-size: 18px;
+    margin-bottom: 5%;
+  }
+
+  .free_____homeButton-close {
+    font-size: 12px;
+    top: 10px;
+    right: 10px;
+    transform: scale(0.7);
+  }
+
+  .free_____phone {
+    height: 55px;
+  }
+
+  .free_____button-send {
+    font-size: 12px;
+  }
+
+  .free____phone-error {
+    font-size: 14px;
+  }
+
+  .free____input-error {
+    font-size: 14px;
+  }
+
+
+
+  .free_____homeButton-close {
+    height: 5vh;
+  }
+
+  .free_____button-send {
+    height: 5vh;
+  }
+
+  .wrapper__checkbox {
+    width: 90%;
+    font-size: 9px;
+  }
+
+  .checkbox {
+    min-width: 15px;
+    min-height: 15px;
+    height: 15px;
+    width: 15px;
+    margin-right: 15px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+
+  /* .free-result.free-active {
+    height: auto;
+  } */
+
+  .free-container {
+    padding-top: 20px;
+  }
+
+  .free_____header {
+    width: 100%;
+    font-size: 20px;
+    margin-bottom: 5%;
+  }
+
+  .free_____phone::placeholder {
+    font-size: 12px;
+  }
+
+  .free_____input-text {
+    font-size: 12px;
+    padding: 20px;
+  }
+
+  .free_____input-text::placeholder {
+    font-size: 12px;
+  }
+
+  .wrapper__checkbox {
+    font-size: 10px;
+  }
+
+  .free_____phone {
+    height: 5vh;
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+
+  .free_____homeButton-close {
+    height: 5vh;
+  }
+
+  .free_____button-send {
+    height: 5vh;
+  }
+
+  .free-result.free-active {
+    min-height: 25vw;
+  }
+
+  .wrapper {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+}
+
+
+@media screen and (max-width: 800px) {
+
+  .free-result.free-active {
+    width: 100vw;
+  }
+
+  .free_____phone {
+    align-self: center;
+    display: flex;
+    margin-bottom: 0;
+  }
+
+  .free_____header {
+    font-size: 18px;
+  }
+
+  .free_____homeButton-close {
+    font-size: 8px;
+  }
+
+  .free_____button-send {
+    font-size: 8px;
+  }
+
+}
+
+
+@media screen and (max-width: 600px) {
+
+  .free-container {
+    width: 100vw;
+    height: 100%;
+  }
+
+  .free-result.free-active {
+    min-height: 200px;
+  }
+
+  .free_____header {
+    font-size: 22px;
+  }
+
+  .free_____phone {
+    width: 60%;
+    height: 25px;
+    height: 60px;
+    font-size: 18px;
+  }
+
+  .free_____phone::placeholder {
+    font-size: 18px;
+  }
+
+  .free_____input-text {
+    font-size: 16px;
+  }
+
+  .free_____input-text::placeholder {
+    font-size: 16px;
+  }
+
+  .free_____button-send {
+    height: 25px;
+  }
+
+
+
+}
+
+
+@media screen and (max-width: 480px) {
+
+
+  .free-container {
+    padding-top: 20%;
+    justify-content: center;
+    gap: 4%;
+  }
+
+  .free_____header {
+    font-size: 20px;
+    padding-top: 30px;
+  }
+  
+  .free_____phone {
+    width: 100%;
+    height: 6vh;
+    font-size: 20px;
+    gap: 0;
+  }
+  
+  .free_____phone::placeholder {
+    font-size: 20px;
+  }
+
+  .free_____header {
+    font-size: 22px;
+    margin-bottom: 0;
+  }
+
+  .free_____text {
+    margin-bottom: 0;
+    font-size: 16px;
+  }
+
+  .wrapper {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .free_____form {
+    justify-content: center;
+  }
+
+  .free____phone-error {
+    font-size: 14px;
+  }
+
+  .free_____homeButton-close {
+    top: 60px;
+  }
+
+  .free_____button-send {
+    width: 100%;
+    font-size: 18px;
+    height: 8vh;
+    margin-bottom: 60px;
+  }
+
+}
+
+@media screen and (max-height: 700px) {
+
+  .free_____header {
+    padding-top: 2px;
+  }
+
+
+}
+/*# sourceMappingURL=freeconsult.css.map */

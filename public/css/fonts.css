@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'TT Norms';
+    src: url('../fonts/TTNorms-Regular.woff2');
+    src: local('☺'), url('../fonts/TTNorms-Regular.woff2') format('woff2'), url('../fonts/TTNorms-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Norms';
+    src: url('../fonts/TTNorms-Medium.woff2');
+    src: local('☺'), url('../fonts/TTNorms-Medium.woff2') format('woff2'), url('../fonts/TTNorms-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: Medium;
+}
+
+@font-face {
+    font-family: 'TT Norms';
+    src: url('../fonts/TTNorms-Bold.woff2');
+    src: local('☺'), url('../fonts/TTNorms-Bold.woff2') format('woff2'), url('../fonts/TTNorms-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: Bold;
+}
+
+@font-face {
+    font-family: 'TT Norms';
+    src: url('../fonts/TTNorms-ExtraBold.woff2');
+    src: local('☺'), url('../fonts/TTNorms-ExtraBold.woff2') format('woff2'), url('../fonts/TTNorms-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: ExtraBold;
+}
+
+@font-face {
+    font-family: 'TT Norms';
+    src: url('../fonts/TTNorms-Black.woff2');
+    src: local('☺'), url('../fonts/TTNorms-Black.woff2') format('woff2'), url('../fonts/TTNorms-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: Heavy;
+}

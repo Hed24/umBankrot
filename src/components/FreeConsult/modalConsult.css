@@ -1,0 +1,152 @@
+.resultPdf {
+  display: none;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(20, 20, 20, 0.6);
+  transform: scale(0);
+  z-index: 1000;
+  transition: transform 0.25s ease;
+}
+.resultPdf___wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  min-width: 35%;
+  min-height: 35vh;
+  background-color: #FFFFFF;
+  border-radius: 6px;
+  padding: 30px;
+  text-align: center;
+  gap: 20px;
+}
+.resultPdf___wrapper__img {
+  width: 20%;
+}
+.resultPdf___wrapper h3 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+}
+.resultPdf___wrapper p {
+  font-size: 20px;
+  width: 80%;
+}
+.resultPdf___wrapper .homeButton {
+  position: initial;
+  display: block;
+  width: 36%;
+  height: 57px;
+  background-color: #ED2656;
+  border-radius: 60px;
+  border: none;
+  color: #FFFFFF;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.resultPdf.show {
+  display: flex;
+  transform: scale(1);
+}
+
+@media screen and (max-width: 1200px) {
+  .resultPdf___wrapper {
+    width: 45%;
+  }
+  .resultPdf___wrapper__img {
+    width: 20%;
+  }
+  .resultPdf___wrapper {
+    width: 50%;
+    gap: 12px;
+  }
+  .resultPdf___wrapper p {
+    font-size: 16px;
+  }
+  .resultPdf___wrapper .homeButton {
+    height: 45px;
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 960px) {
+  .resultPdf___wrapper {
+    width: 50%;
+    gap: 12px;
+  }
+  .resultPdf___wrapper h3 {
+    font-size: 28px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .resultPdf___wrapper {
+    width: 50%;
+    gap: 12px;
+    padding: 20px;
+  }
+  .resultPdf___wrapper__img {
+    width: 15%;
+  }
+  .resultPdf___wrapper h3 {
+    font-size: 22px;
+  }
+  .resultPdf___wrapper p {
+    font-size: 14px;
+  }
+  .resultPdf___wrapper .homeButton {
+    height: 30px;
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .resultPdf div h2 {
+    font-size: 36px !important;
+  }
+  .resultPdf___wrapper {
+    width: 70%;
+    height: 70%;
+    gap: 8%;
+  }
+  .resultPdf___wrapper__img {
+    width: 25% !important;
+  }
+}
+@media screen and (max-width: 480px) {
+  .resultPdf {
+    background-color: none;
+  }
+  .resultPdf___wrapper {
+    width: 100vw;
+    height: 100%;
+    gap: 5%;
+    border-radius: 0;
+    padding-top: 100px;
+    justify-content: center;
+  }
+  .resultPdf___wrapper__img {
+    width: 35% !important;
+  }
+  .resultPdf___wrapper h3 {
+    font-size: 32px;
+    line-height: auto;
+  }
+  .resultPdf___wrapper p {
+    font-size: 20px;
+    margin-bottom: 50px;
+  }
+  .resultPdf___wrapper .homeButton {
+    height: 50px;
+    font-size: 16px;
+    width: 60%;
+  }
+}/*# sourceMappingURL=modalConsult.css.map */

@@ -1,0 +1,229 @@
+.questions-block {
+    background-color: #F0F0F0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    position: relative;
+    padding-right: 140px;
+    padding-bottom: 140px;
+    padding-left: 140px;
+    
+}
+
+.droplist {
+    display: block;
+    position: relative;
+    width: 48%;
+    height: 135px;
+    padding: 0;
+    border: none;
+    margin-bottom: 56px;
+    overflow-y: initial;
+    z-index: 5;
+    &___button {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background-color: #FFFFFF;
+        font-size: 16px;
+        font-weight: 700;
+        text-align: left;
+        padding-left: 15%;
+        border-radius: 10px;
+        border: none;
+        outline-offset: -7px;
+        outline-style: dashed;
+        outline-width: 1px;
+        outline-color: rgba(0, 0, 0, 0.4);
+        z-index: 100;
+        -webkit-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out;
+        &:hover {
+            background-color: #D9D9D9;        
+        }
+        &:focus {
+            background-color: #D9D9D9;
+        }
+        &__arrow {
+            position: absolute;
+            top: 45%;
+            left: 6%;
+            width: 16px;
+            height: 11px;
+            background-image: url(../../../public/img/triangle.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center left;
+            -webkit-transition: -webkit-transform .5s ease;
+            transition: -webkit-transform .5s ease;
+            -o-transition: transform .5s ease;
+            transition: transform .5s ease;
+            transition: transform .5s ease, -webkit-transform .5s ease;
+        }
+        &__arrow-active {
+            -webkit-transform: rotate(-180deg);
+                -ms-transform: rotate(-180deg);
+                    transform: rotate(-180deg);
+        }
+    }
+    &___answer {
+        position: absolute;
+        display: none;
+        width: 100%;
+        min-height: 140px;
+        background-color: #FFFFFF;
+        margin-top: -3px;
+        padding-top: 32px;
+        padding-right: 15px;        
+        padding-left: 15px;
+        font-size: 14px;
+        opacity: 0;
+        z-index: 0;
+    }
+    &___answer-active {
+        display: block;
+        opacity: 1;
+        overflow: visible;
+        -webkit-animation: AnswerApperance .5s linear;
+                animation: AnswerApperance .5s linear;
+        z-index: 130;
+        z-index: 0;
+    }
+
+    @-webkit-keyframes AnswerApperance {
+        0% {
+            opacity: 0;
+        } 
+        50% {
+            opacity: 0.8;
+        } 
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @keyframes AnswerApperance {
+        0% {
+            opacity: 0;
+        } 
+        50% {
+            opacity: 0.8;
+        } 
+        100% {
+            opacity: 1;
+        }
+    }
+}
+.droplist-active {
+    z-index: 10;
+}
+
+
+@media screen and (max-width: 1200px) {
+
+    .questions-block {
+        padding-right: 100px;
+        padding-left: 100px;
+        padding-bottom: 120px;
+    }
+
+    .droplist {
+        height: 110px;
+    }
+
+    .droplist___button__arrow {
+        background-size: contain;
+    }
+}
+
+@media screen and (max-width: 960px) {
+
+    .questions-block {
+        padding-right: 80px;
+        padding-left: 80px;
+    }
+
+    .droplist {
+        height: 90px;
+        &___button {
+            font-size: 14px;
+        }
+    }
+
+    .droplist___button__arrow {
+        width: 12px;
+        height: 7px;
+        left: 5%;
+    }
+
+    .droplist___answer {
+        padding-top: 15px;
+        font-size: 12px;
+        min-height: 120px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    .questions-block {
+        padding-right: 50px;
+        padding-left: 50px;
+        padding-bottom: 70px;
+    }
+
+    .droplist {
+        height: 70px;
+        &___button {
+            font-size: 12px;
+            outline-offset: -5px;
+        }
+    }
+
+    .droplist___answer {
+        padding-top: 12px;
+        font-size: 11px;
+        min-height: 110px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+
+    .questions-block {
+        padding-right: 10px;
+        padding-left: 10px;
+        padding-bottom: 40px;
+    }
+
+    .droplist {
+        height: 50px;
+        &___button {
+            font-size: 10px;
+            outline-offset: -3px;
+        }
+    }
+
+    .droplist___answer {
+        padding-top: 10px;
+        min-height: 100px;
+    }
+}
+
+@media screen and (max-width: 640px) { 
+
+    .droplist {
+        width: 100%;
+        height: 75px;
+        margin-bottom: 30px;
+    }
+}
